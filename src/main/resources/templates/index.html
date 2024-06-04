@@ -5,6 +5,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<span th:text="${message}"></span>
+<span th:text="${message}"></span><br />
+<form method="post" action="/">
+お名前：<input type="text" name="username"><br />
+<button type="submit">送信</button>
+
+</form>
 </body>
 </html>
