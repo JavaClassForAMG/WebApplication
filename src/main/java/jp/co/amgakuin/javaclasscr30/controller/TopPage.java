@@ -4,9 +4,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+ * 
+ * @author amg
+ *
+ */
+
 @Controller
 public class TopPage {
-	
+	/**
+	 * 
+	 * @param model
+	 * @return
+	 */
 	@GetMapping("/")
 	private String index(Model model) {
 		model.addAttribute("message", "Hello World!!");
