@@ -1,6 +1,7 @@
 package jp.co.amgakuin.javaclasscr30.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -12,10 +13,11 @@ public class FormPage {
 	// "/"が呼ばれたら舌の関数を呼ぶよって感じ
 	@PostMapping("/")
 	private String doPost(
-			@RequestParam("username") String name
+			@RequestParam("username") String username,
+			Model model
 			) 
 	{
-		System out.println("name");
+		model.addAttribute("name", username);
 		return "FormPage";
 	}
 }
