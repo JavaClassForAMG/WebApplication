@@ -10,7 +10,7 @@ public class TopPage {
 	//飛び出せゲッター
 	@GetMapping("/")
 	private String index(Model model) {
-		model.addAttribute("message", "Hello World!!");
+		model.addAttribute("message", "よく来た。貴様、名は。");
 		return "index";
 	}
 }
