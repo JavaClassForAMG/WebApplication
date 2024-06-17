@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WebApplication {
 	/**
-	 * 適当なコメント
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
